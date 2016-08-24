@@ -33,4 +33,42 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
+    public function books()
+    {
+        return view('ebooks.index');
+    }
+
+    public function booksCreate(){
+        return view('ebooks.create');
+    }
+
+    public function ranking()
+    {
+        return view('games.ranking');
+    }
+
+    public function prices()
+    {
+        return view('games.prices');
+    }
+
+    public function sales()
+    {
+        return view('stats.sale');
+    }
+
+    public function users()
+    {
+        return view('stats.users');
+    }
+
+    public function usersAdmin(){
+        return view('admin.users');
+    }
+
+    public function roles(){
+        return view('admin.roles');
+    }
+
+
 }

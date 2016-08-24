@@ -108,22 +108,19 @@
                     <a href="{{url("/")}}"><i class="fa fa-dashboard fa-fw"></i>Panel de Control</a>
                 </li>
                 <li>
-                    <a href="#!"><i class="fa fa-book fa-fw"></i>Libros</a>
+                    <a href="{{'ebooks'}}"><i class="fa fa-book fa-fw"></i>Libros</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-edit fa-fw"></i> Juegos <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Ranking</a>
+                            <a href="{{'/games/ranking'}}">Ranking</a>
                         </li>
                         <li>
                             <a href="#">Premios<span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
                                 <li>
-                                    <a href="#">Crear </a>
-                                </li>
-                                <li>
-                                    <a href="#">Modificar</a>
+                                    <a href="{{'/games/prices'}}">Historico</a>
                                 </li>
                             </ul>
                             <!-- /.nav-third-level -->
@@ -136,25 +133,25 @@
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Estadisticas<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Venta</a>
+                            <a href="{{'/stats/sales'}}">Venta</a>
                         </li>
                         <li>
-                            <a href="#">Usuarios</a>
+                            <a href="{{'/stats/users'}}">Usuarios</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope-o fa-fw"></i> Mensajes</a>
+                    <a href="{{'/messages'}}"><i class="fa fa-envelope-o fa-fw"></i> Mensajes</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-user fa-fw"></i> Administracion de Usuarios<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Usuarios</a>
+                            <a href="{{'/admin/users'}}">Usuarios</a>
                         </li>
                         <li>
-                            <a href="#">Roles</a>
+                            <a href="{{'/admin/roles'}}">Roles</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
