@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function () {
-    if (Auth::guest()){
+    if (!Auth::guest()){
         return view('home');
     }else{
         return view('auth.login');
@@ -19,6 +19,24 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'HomeController@index');
+
+Route::get('ebooks', 'HomeController@ebooks');
+
+Route::get('ebooks/create', 'HomeController@booksCreate');
+
+Route::get('games/ranking','HomeController@ranking');
+
+Route::get('games/prices','HomeController@prices');
+
+Route::get('stats/sales','HomeController@sales');
+
+Route::get('stats/users','HomeController@users');
+
+Route::get('admin/users','HomeController@usersAdmin');
+
+Route::get('admin/roles','HomeController@roles');
+
+Route::get('messages','HomeController@messages');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

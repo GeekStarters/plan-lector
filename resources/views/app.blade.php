@@ -10,11 +10,12 @@
 	<link href="{{ asset('/css/timeline.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/sb-admin-2.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/font-awesome.min.css') }}" rel="stylesheet">
+	@yield('scripts')
 </head>
 <body>
 <div id="wrapper">
 	<!-- Navigation -->
-	@if(Auth::guest())
+	@if(!Auth::guest())
 		@include('global_layouts.nav')
 	@endif
 	@yield('content')
@@ -24,6 +25,5 @@
 <script src="{{ asset("/js/bootstrap.min.js") }}"></script>
 <script src="{{ asset("/js/metisMenu.min.js") }}"></script>
 <script src="{{ asset("/js/sb-admin-2.js") }}"></script>
-
 </body>
 </html>
