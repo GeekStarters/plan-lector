@@ -33,7 +33,7 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
-    public function books()
+    public function ebooks()
     {
         return view('ebooks.index');
     }
@@ -60,6 +60,11 @@ class HomeController extends Controller {
     public function users()
     {
         return view('stats.users');
+    }
+
+    public function messages()
+    {
+        return view('messages.index');
     }
 
     public function usersAdmin(){

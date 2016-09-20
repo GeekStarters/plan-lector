@@ -32,6 +32,8 @@ Route::get('stats/sales','HomeController@sales');
 
 Route::get('stats/users','HomeController@users');
 
+Route::get('/messages','HomeController@messages');
+
 Route::get('admin/users','HomeController@usersAdmin');
 
 Route::get('admin/roles','HomeController@roles');

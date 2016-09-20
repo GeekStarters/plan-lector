@@ -108,7 +108,7 @@
                     <a href="{{url("/")}}"><i class="fa fa-dashboard fa-fw"></i>Panel de Control</a>
                 </li>
                 <li>
-                    <a href="{{'ebooks'}}"><i class="fa fa-book fa-fw"></i>Libros</a>
+                    <a href="{{ url('/ebooks') }}"><i class="fa fa-book fa-fw"></i>Libros</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-edit fa-fw"></i> Juegos <span class="fa arrow"></span></a>
