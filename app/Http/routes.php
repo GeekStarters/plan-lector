@@ -11,36 +11,26 @@
 |
 */
 Route::get('/', function () {
-    if (!Auth::guest()){
-        return view('home');
-    }else{
-        return view('auth.login');
-    }
+    return redirect('/home');
 });
 
-Route::get('home', 'HomeController@index');
+/* DEV */
+Route::get('profile', 'AuthParseController@profile');
 
+/* Main Routes */
+Route::get('login', 'MainController@getLogin');
+Route::post('login', 'MainController@setLogin');
+Route::get('logout', 'MainController@setLogout');
+Route::get('home', 'MainController@home');
+
+/* ** */
 Route::get('ebooks', 'HomeController@ebooks');
-
 Route::get('ebooks/create', 'HomeController@booksCreate');
-
 Route::get('games/ranking','HomeController@ranking');
-
 Route::get('games/prices','HomeController@prices');
-
 Route::get('stats/sales','HomeController@sales');
-
 Route::get('stats/users','HomeController@users');
-
 Route::get('/messages','HomeController@messages');
-
 Route::get('admin/users','HomeController@usersAdmin');
-
 Route::get('admin/roles','HomeController@roles');
-
 Route::get('messages','HomeController@messages');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);

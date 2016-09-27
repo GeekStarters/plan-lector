@@ -19,11 +19,11 @@
 								</ul>
 							</div>
 						@endif
-							<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
+							<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
 								<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 								<div class="form-group">
-									<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus value="{{ old('email') }}">
+									<input class="form-control" placeholder="E-mail" name="email" type="text" autofocus value="{{ old('email') }}">
 								</div>
 								<div class="form-group">
 									<input class="form-control" placeholder="Contraseña" name="password" type="password" value="">

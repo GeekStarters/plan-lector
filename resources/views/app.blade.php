@@ -15,7 +15,7 @@
 <body>
 <div id="wrapper">
 	<!-- Navigation -->
-	@if(!Auth::guest())
+	@if(Session::has('parseData.user'))
 		@include('global_layouts.nav')
 	@endif
 	@yield('content')

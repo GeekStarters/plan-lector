@@ -136,6 +136,8 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
+        'GrahamCampbell\Parse\ParseServiceProvider',
+
 		/*
 		 * Application Service Providers...
 		 */
