@@ -17,6 +17,9 @@ class MainController extends AuthParseController{
     }
 
     public function getLogin(){
+        if($this->isLogin()){
+            return redirect('/home');
+        }
         return view('auth.login');
     }
 
